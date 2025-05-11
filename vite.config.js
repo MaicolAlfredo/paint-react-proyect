@@ -8,4 +8,5 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
+  base:"https://MaicolAlfredo.github.io/paint-react-proyect/"
 })
