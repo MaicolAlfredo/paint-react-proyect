@@ -1,0 +1,26 @@
+/* Footer.css */
+footer {
+  grid-area: footer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: silver;
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(5, 30px); /* 5 columnas de 30px */
+  gap: 5px; /* Espacio entre cuadritos */
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000; /* Borde para visibilidad */
+  cursor: pointer; /* Mano al pasar el ratón */
+}
+
+.color-swatch:hover {
+  opacity: 0.8; /* Efecto al pasar el ratón */
+}

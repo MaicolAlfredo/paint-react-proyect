@@ -1,0 +1,50 @@
+.toolbar {
+  grid-area: aside;
+  background: silver;
+  width: 56px; /* Aumentado para dar espacio a los bordes (2 botones de 26px = 52px + 4px de gap) */
+
+  gap: 4px; /* Espacio entre botones */
+  padding: 2px; /* Espacio interno para que no se peguen al borde */
+}
+
+.toolbar-nav {
+  display: flex;
+  flex-wrap: wrap; /* Mantiene los botones en filas */
+}
+
+.mode-btn {
+  width: 24px;
+  height: 24px;
+  background-color: #bdbdbd;
+  border: 1.5px solid #eee;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  /*box-sizing: border-box;  El borde se incluye en el tamaño total (24x24px) */
+  image-rendering: pixelated;
+  display: flex; /* Para centrar la imagen dentro del botón */
+  align-items: center;
+  justify-content: center;
+}
+
+.mode-icon {
+  width: 20px; /* Un poco más pequeño que el botón para que quepa bien */
+  height: 20px;
+  object-fit: contain; /* Mantiene las proporciones de la imagen */
+}
+
+.mode-btn.active {
+  background-color: #eee;
+  border-color: #000;
+  border-right-color: #eee;
+  border-bottom-color: #eee;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.mode-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mode-btn:focus {
+  outline: none;
+}
